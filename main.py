@@ -2,14 +2,9 @@ from stats import get_book_words, character_count, characters_sorted
 from pathlib import Path
 import sys
 
-
-file = sys.argv[1]
-path = Path(sys.argv[1])
-
-#file = '/mnt/c/Users/Sam/Documents/Code/github/bootdotdev/bookbot/books/frankenstein.txt' 
-#path = Path("/mnt/c/Users/Sam/Documents/Code/github/bootdotdev/bookbot/books/frankenstein.txt")
-
 def main():
+    file = sys.argv[1]
+    path = Path(sys.argv[1]) 
     no_words = get_book_words(file)
     characters = characters_sorted(file)
     location = Path(path.parent.name) / path.name
@@ -23,6 +18,9 @@ def main():
     print('============= END ===============')
 
 
-
-
-main()
+if len(sys.argv) < 2:
+    print('Usage: python3 main.py <path_to_book>')
+    sys.exit(1)
+else:
+    main()
+    
