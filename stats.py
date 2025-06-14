@@ -34,7 +34,6 @@ def characters_sorted(filepath):
             new_dict_inner['num'] = number
             dict_list.append(new_dict_inner)
     dict_list.sort(reverse=True, key=sort_on)
-    
     return(dict_list)
 
     

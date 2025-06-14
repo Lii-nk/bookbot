@@ -3,7 +3,6 @@ from pathlib import Path
 import sys
 
 def main():
-    print('book sorter')
     file = sys.argv[1]
     path = Path(sys.argv[1]) 
     no_words = get_book_words(file)
