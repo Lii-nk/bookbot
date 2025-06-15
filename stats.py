@@ -21,6 +21,7 @@ def character_count(filepath):
 def sort_on(dict):
     return dict['num']
 
+#sorts cahracters
 def characters_sorted(filepath):
     unsorted = character_count(filepath)
     dict_list = []
@@ -35,6 +36,7 @@ def characters_sorted(filepath):
             dict_list.append(new_dict_inner)
     dict_list.sort(reverse=True, key=sort_on)
     return(dict_list)
+
 
     
     

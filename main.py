@@ -2,6 +2,7 @@ from stats import get_book_words, character_count, characters_sorted
 from pathlib import Path
 import sys
 
+#main called at bottom with instructions
 def main():
     file = sys.argv[1]
     path = Path(sys.argv[1]) 
