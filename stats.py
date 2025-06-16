@@ -18,10 +18,11 @@ def character_count(filepath):
             character_dict[letter] = 1
     return(character_dict)
 
+#key for sorter
 def sort_on(dict):
     return dict['num']
 
-#sorts cahracters
+#sorts characters
 def characters_sorted(filepath):
     unsorted = character_count(filepath)
     dict_list = []

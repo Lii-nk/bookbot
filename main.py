@@ -18,7 +18,7 @@ def main():
         print(str(dict_item['char']) + ': ' + str(dict_item['num']))
     print('============= END ===============')
 
-
+#checks if the program has been called correctly
 if len(sys.argv) < 2:
     print('Usage: python3 main.py <path_to_book>')
     sys.exit(1)
